@@ -1,0 +1,12 @@
+[[ananke_socials]]
+name = "twitter"
+url = "https://twitter.com/theNewDynamic"
+
+[[ananke_socials]]
+name = "github"
+url = "https://github.com/theNewDynamic"
+
+[[ananke_socials]]
+name = "mastodon"
+url = "https://social.example.com/@username"
+rel = "me noopener"

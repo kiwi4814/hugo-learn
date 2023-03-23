@@ -1,0 +1,4 @@
+[submodule "themes/meme"]
+	path = themes/meme
+	url = https://github.com/kiwi4814/hugo-theme-meme.git
+	branch = master

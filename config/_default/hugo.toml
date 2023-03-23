@@ -1,0 +1,16 @@
+baseURL = 'http://example.org/'
+# 语言代码
+languageCode = "en-us"
+# 网站标题
+title = 'Hugo-Learn'
+# 主题
+theme = 'meme'
+# 摘要字数
+summaryLength = 10
+
+
+
+# SectionPagesMenu = "main"
+
+# 每一页展示的文章数量
+Paginate = 3

@@ -1,0 +1,23 @@
+[[main]]
+name = "关于我"
+title = "关于我"
+url = "/about/"
+weight = 1
+identifier = "about"
+
+  [main.params]
+  type = "grid"
+
+[[main]]
+name = "开发"
+title = "开发"
+url = "/blogs/"
+weight = 2
+identifier = "blogs"
+
+[[main]]
+name = "教程"
+title = "教程"
+url = "/posts/"
+weight = 3
+identifier = "posts"
