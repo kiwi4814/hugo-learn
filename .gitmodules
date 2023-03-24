@@ -2,3 +2,6 @@
 	path = themes/meme
 	url = https://github.com/kiwi4814/hugo-theme-meme.git
 	branch = master
+[submodule "themes/hugo-ivy"]
+	path = themes/hugo-ivy
+	url = https://github.com/kiwi4814/hugo-ivy.git
