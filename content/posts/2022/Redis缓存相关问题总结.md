@@ -22,7 +22,7 @@ toc = false
 
 所谓的**只读缓存**，指的是查询数据的时候先从Redis查询，如果未命中那么才会从数据库查询并SET到Redis缓存中，而在对数据进行删改的时候，除了本身操作数据库之外，还会把相应的缓存数据删除，保证Redis下次查询的时候不会命中。而**读写缓存**指的是对数据的所有读请求和写请求都会发送到缓存中，在缓存中对数据进行增删改操作。另外，对于读写缓存来说，还存在同步直写和异步写回两种策略，具体的区别可以根据下图理解。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img009d055bb91d42c28b9316c649f87f66.jpg" alt="img" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img009d055bb91d42c28b9316c649f87f66.jpg" alt="img" />
 
 
 
@@ -46,13 +46,13 @@ toc = false
 
 
 但是无论是只读缓存还是读写缓存的同步直写策略，都必须保证对Redis和数据库的操作必须是原子性的，两者有任何一边失败，都会带来数据一致性问题。
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img2c376b536aff9d14d8606499f401cdac.jpg" alt="img" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img2c376b536aff9d14d8606499f401cdac.jpg" alt="img" />
 
 
 
 对于上面这两种情况，我们可以根据实际情况（是否有并发请求）来决定采用什么方案。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img11ae5e620c63de76448bc658fe6a496f.jpg" alt="img" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img11ae5e620c63de76448bc658fe6a496f.jpg" alt="img" />
 
 
 
@@ -137,7 +137,7 @@ toc = false
 
 针对缓存雪崩、缓存击穿、缓存穿透这三种缓存异常，对应的原因处理方案，整理在下图了，方便快速复习。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//imgb5bd931239be18bef24b2ef36c70e9e1.jpg" alt="img" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//imgb5bd931239be18bef24b2ef36c70e9e1.jpg" alt="img" />
 
 
 

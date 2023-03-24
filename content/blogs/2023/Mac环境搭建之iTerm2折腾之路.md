@@ -26,13 +26,13 @@ iTerm2的安装很简单，去[官网](https://iterm2.com/)下载或者使用Hom
 
 iTerm2的主要设置都在 Settings -> Profiles里面，打开后可以设置字体、配色方案、窗口样式、ssh等，并且可以导入导出为JSON（建议设置完成后导出进行备份）。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230201144115407.webp" alt="image-20230201144115407" style="zoom: 33%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230201144115407.webp" alt="image-20230201144115407"  />
 
 
 
 在iTerm2初始化的过程中，我主要修改了代码字体、配色方案、初始化窗口的大小（默认打开iTerm界面时的窗口大小，稍微改大了一些）以及背景壁纸等外观方面的改动。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230201150934590.webp" alt="image-20230201150934590" style="zoom: 33%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230201150934590.webp" alt="image-20230201150934590" />
 
 **1.字体**
 
@@ -62,7 +62,7 @@ iTerm2最常用的主题是[Solarized](https://github.com/altercation/solarized)
 
 
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230201154934113.webp" alt="image-20230201154934113" style="zoom: 33%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230201154934113.webp" alt="image-20230201154934113" />
 
 ### 二、安装[oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 
@@ -106,7 +106,7 @@ sudo sh ./install.sh
 
 然后按照提示操作即可（Y），安装成功后显示如下界面：
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230131151313028.webp" alt="image-20230131151313028" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230131151313028.webp" alt="image-20230131151313028"  />
 
 
 
@@ -130,7 +130,7 @@ pip3 install powerline-status --user
 
 然后等待安装成功即可。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230131152454149.webp" alt="image-20230131152454149" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230131152454149.webp" alt="image-20230131152454149"  />
 
 
 
@@ -154,11 +154,11 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/the
 
 （1）执行 `vi ~/.zshrc` 编辑配置文件，修改主题：
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230131161302199.webp" alt="image-20230131161302199" style="zoom: 50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230131161302199.webp" alt="image-20230131161302199" />
 
 （2）将图中主体部分修改为：`ZSH_THEME="powerlevel10k/powerlevel10k"`，退出VIM编辑界面后（:wq）执行 `source ~/.zshrc` ，然后自动进入powerlevel10k初始化设置界面：
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230131162633820.webp" alt="image-20230131162633820" style="zoom: 50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230131162633820.webp" alt="image-20230131162633820" />
 
 第一步是安装推荐的字体，这里推荐选n，因为网络原因大概率会安装失败，最好是手动安装需要的字体。
 
@@ -204,7 +204,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 >
 > （2）修改 `ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=30'` 的配置值为30（默认是8） 
 >
-> <img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230201164334524.webp" alt="image-20230201164334524" style="zoom:33%;" />
+> <img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230201164334524.webp" alt="image-20230201164334524" />
 
 
 
@@ -224,7 +224,7 @@ plugins=(
 
 至此，关于iTerm2的安装和配置就大公告成了，最终效果如下（不喜欢彩虹图标以及各类配色的可以选择更简洁的主题或者配置）。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230201164529759.webp" alt="image-20230201164529759" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230201164529759.webp" alt="image-20230201164529759"  />
 
 ### 参考链接
 

@@ -33,29 +33,29 @@ ZeroTier 是一个专门用来建立点对点虚拟专用网（P2P VPN）的工�
 
 在 [ZeroTier的官网](https://www.zerotier.com/) 注册一个账号，注册完成后会提示你 `Create A Network`:
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230313172246503.webp" alt="image-20230313172246503" style="zoom: 40%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230313172246503.webp" alt="image-20230313172246503" />
 
 按照提示创建一个网络，会给你生成一个NETWORK ID，**请记下这个ID**（后文中统一使用 `<NETWORK_ID>` 来表示，不再赘述），后面在配置中我们将会多次使用它。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230313172427783.webp" alt="image-20230313172427783" style="zoom:40%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230313172427783.webp" alt="image-20230313172427783" />
 
 点击记录进入详情后，我们可以看到  `Settings`、`Members`、 `Flow Rules`、 `Administrators` 四个配置，我们一般只需要关心前两项即可。
 
 `Settings` 中我们可以设置网络的名称、描述和权限（私有or公有），在 `Settings -> Advanced` 中我们可以选择局域网IP的号段。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230314123006272.webp" alt="image-20230314123006272" style="zoom: 33%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230314123006272.webp" alt="image-20230314123006272" />
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230314122230010.webp" alt="image-20230314122230010" style="zoom: 33%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230314122230010.webp" alt="image-20230314122230010" />
 
 `Members`中则会展示所有加入过此网络的客户端以及相关的设置信息，但是目前应该会显示 "No devices have joined this network"， 表示目前没有任何客户端加入。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230314131753967.webp" alt="image-20230314131753967" style="zoom: 33%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230314131753967.webp" alt="image-20230314131753967" />
 
 ### 2.2 安装客户端
 
 下载页：https://www.zerotier.com/download/
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230314123741898.webp" alt="image-20230314123741898" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230314123741898.webp" alt="image-20230314123741898" />
 
 zerotier的官网提供了多种类型的客户端方便下载和安装，下面将以其中最典型的几种来展示下如何安装和使用。
 
@@ -63,7 +63,7 @@ zerotier的官网提供了多种类型的客户端方便下载和安装，下面
 
 Windows和Mac下客户端的安装方式大同小异，下载对应的安装包双击安装即可，安装完成后在托盘图标上选择 Join New Network，然后输入刚才创建好的 `<NETWORK_ID>` 即可。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230314124219810.webp" alt="image-20230314124219810" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230314124219810.webp" alt="image-20230314124219810" />
 
 
 
@@ -134,7 +134,7 @@ NAS的安装方式比较简单，在NAS的套件中心中增加[矿神群晖 SPK
 
 安装完客户端后，我们再回来zerotier的管理页面上，可以看到 `Members` 下面已经多出了几行，分别是我们刚刚添加的那些客户端，下图是一个示例，已经标注了关键信息：
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230314120947302.webp" alt="image-20230314120947302" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230314120947302.webp" alt="image-20230314120947302" />
 
 
 
@@ -142,7 +142,7 @@ NAS的安装方式比较简单，在NAS的套件中心中增加[矿神群晖 SPK
 
 在上面的图中，目前有三台在线的设备，分别是Mac（192.168.196.233）、腾讯云（192.168.196.110）和NAS（192.168.196.88），这三台机器的物理位置分别在公司、腾讯云以及家里，按照图中设置勾选后，我就可以在Mac机器上直接访问 http://192.168.196.88 来访问家里的NAS了。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230314131226639.webp" alt="image-20230314131226639" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230314131226639.webp" alt="image-20230314131226639" />
 
 ## 三、搭建和使用moon节点
 

@@ -44,7 +44,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230309132920921.webp" alt="image-20230309132920921" style="zoom: 50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230309132920921.webp" alt="image-20230309132920921" />
 
 由于网络问题，国内的服务器（如阿里云、腾讯云等）可能无法访问github，可以克隆[gitee的镜像](https://gitee.com/mirrors/oh-my-zsh)，然后在tools中找到`install.sh`脚本，并在脚本目录下执行安装命令：
 
@@ -62,7 +62,7 @@ pip3 install powerline-status --user
 
 结果：
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230309133852565.webp" alt="image-20230309133852565" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230309133852565.webp" alt="image-20230309133852565" />
 
 
 
@@ -84,7 +84,7 @@ vi ~/.zshrc
 source ~/.zshrc
 ```
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317142345658.webp" alt="image-20230317142345658" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317142345658.webp" alt="image-20230317142345658" />
 
 这时候可能会提示：`You are using ZSH version 5.0.2. The minimum required version for Powerlevel10k is 5.1.`
 
@@ -102,11 +102,11 @@ sudo make -j 20 install.bin install.modules install.fns
 
 在执行完上面的过程，可以通过命令 `zsh --version` 查看版本，这时候大概率仍然是 5.0.2 ，需要我们重新登录下系统。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317141927648.webp" alt="image-20230317141927648" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317141927648.webp" alt="image-20230317141927648" />
 
 重新登录后，出现以下提示，按照提示操作切换为最新版本即可。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317145430715.webp" alt="image-20230317145430715" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317145430715.webp" alt="image-20230317145430715" />
 
 ```bash
 echo /usr/local/bin/zsh | sudo tee -a /etc/shells

@@ -73,7 +73,7 @@ frp 还具有一些其他的功能，比如支持 TCP/UDP 流量转发、支持�
 
 关于如何安装和使用示例 [frp官方中文文档](https://gofrp.org/docs/) 有比较详细的介绍了，此外官网还有很多不同场景下的使用方法，本文主要是入门使用，故对更加深入的使用方法感兴趣的可以自行跳转研究。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317155233056.webp" alt="image-20230317155233056" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317155233056.webp" alt="image-20230317155233056" />
 
 
 
@@ -124,7 +124,7 @@ frp 还具有一些其他的功能，比如支持 TCP/UDP 流量转发、支持�
 
 安装过程中，根据提示输入或选择自己想要配置的值即可。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317163306465.webp" alt="image-20230317163306465" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317163306465.webp" alt="image-20230317163306465" />
 
 另外，这里选择的接口需要在防火墙中放开（centos7 使用 firewalld 管理防火墙）,防火墙相关的命令参考如下：
 
@@ -147,7 +147,7 @@ sudo firewall-cmd --list-ports
 
 此外，如果你使用的是国内运营商的服务器或者安装了iptables，还需要在防火墙管理页面允许对应的端口通过：
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317172328845.webp" alt="image-20230317172328845" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317172328845.webp" alt="image-20230317172328845" />
 
 最终生成的配置文件如下：（路径在 `/usr/local/frps/frps.ini` ）
 
@@ -238,23 +238,23 @@ docker stop frpc
 
 （1）打开 `filestation` ，创建或者上传配置文件 `frpc.ini` , 配置文件的内容和配置项参见本节末尾。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317175234625.webp" alt="image-20230317175234625" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317175234625.webp" alt="image-20230317175234625" />
 
 （2）打开 `Docker套件`， 在注册表中搜索frpc，选择第一个 `snowdreamtech/frpc` 双击选择 latest 并下载
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317175712133.webp" alt="image-20230317175712133" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317175712133.webp" alt="image-20230317175712133" />
 
 （3）在 映像 中双击刚才下载的`snowdreamtech/frpc:lastest` 并双击，开始创建容器，并打开高级设置
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317175621520.webp" alt="image-20230317175621520" style="zoom: 50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317175621520.webp" alt="image-20230317175621520" />
 
 （4）高级配置按照下面的步骤操作即可，要点：自启动、映射配置文件、使用与 Docker Host 相同的网络
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317175523854.webp" alt="image-20230317175523854" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317175523854.webp" alt="image-20230317175523854" />
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317175507025.webp" alt="image-20230317175507025" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317175507025.webp" alt="image-20230317175507025" />
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317175541261.webp" alt="image-20230317175541261" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317175541261.webp" alt="image-20230317175541261" />
 
 
 
@@ -264,7 +264,7 @@ docker stop frpc
 
 下面的截图中列出了客户端配置及含义：
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317181102512.webp" alt="image-20230317181102512" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230317181102512.webp" alt="image-20230317181102512" />
 
 完整的配置如下：
 
@@ -311,19 +311,19 @@ remote_port = 32400
 
 首先我们要去注册一个域名，提供商有很多，腾讯云、阿里云、GoDaddy、Namecheap、Namesilo等等，我是在Namesilo上注册的域名，在购买域名的时候要注意初次购买价格和续费价格，有的域名第一年很便宜，但是续费很贵，最好买续费价格不变的，然后域名的后缀可以选冷门一点的 xyz、club、top等等。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319150117132.webp" alt="image-20230319150117132" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319150117132.webp" alt="image-20230319150117132" />
 
 
 
 注册完成后我们访问 [个人账户管理主页](https://www.namesilo.com/account_home.php)，然后点击右上角 Manage My Domains ,打开域名的管理界面。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319150555414.webp" alt="image-20230319150555414" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319150555414.webp" alt="image-20230319150555414" />
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319150728119.webp" alt="image-20230319150728119" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319150728119.webp" alt="image-20230319150728119" />
 
 按照下图中的方式增加A记录：
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319151311076.webp" alt="image-20230319151311076" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319151311076.webp" alt="image-20230319151311076" />
 
 域名相关的设置就到这里，至于具体配置的含义和原理，笔者本身也是一知半解，就不做展开了。
 
@@ -355,11 +355,11 @@ sudo systemctl status nginx
 
 找到server的位置：
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319153604893.webp" alt="image-20230319153604893" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319153604893.webp" alt="image-20230319153604893" />
 
 将其替换为我们需要映射的域名和服务，其他的服务继续在底下增加新的server配置即可。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319153807057.webp" alt="image-20230319153807057" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319153807057.webp" alt="image-20230319153807057" />
 
 ```ini
     ## 群晖控制面板
@@ -401,11 +401,11 @@ nginx -s reload
 
 最后，简单介绍下群晖网盘的同步，首选我们在群晖的控制面板中去开启群晖Drive的web管理：
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319155046586.webp" alt="image-20230319155046586" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319155046586.webp" alt="image-20230319155046586" />
 
 然后需要注意的是 frp 中映射的端口为 6690 （PC端）而不是上图中的 7006，然后在群晖初始化连接的时候，可以直接填域名或者IP，这是由于群晖的默认设置造成的。这里的默认设置端口是指，**NAS 端的 Drive 服务对 PC 端 Drive 程序开放的默认访问端口为 6690，对移动端的 App 开放的默认访问端口为 5000**。此外，Drive 客户端程序在你输入域名后，会检测你输入的域名是不是带有端口号，如果没有填写端口号，客户端程序会自动添加上默认的访问端口去访问 NAS 端的 Drive，PC 端就自动添加 6690，移动端就自动添加 5000。但如果你自己填写了端口号，就会使用你填写的端口号去访问 NAS 端的 Drive。所以在局域网中直接输入群晖的 IP，加不加 6690 端口都能连接上 Drive 服务，但在外网下就需要用一个端口转发到群晖所在 IP 的 6690 端口。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319154737684.webp" alt="image-20230319154737684" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20230319154737684.webp" alt="image-20230319154737684" />
 
 ## 七、总结
 

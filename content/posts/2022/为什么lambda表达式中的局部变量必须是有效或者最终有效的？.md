@@ -95,7 +95,7 @@ public class TestLambda {
 
 当然这里是无法编译的，报错如下图所示：
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//imgimage-20220725221949827.png" alt="image-20220725221949827" style="zoom: 50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//imgimage-20220725221949827.png" alt="image-20220725221949827" />
 
 
 

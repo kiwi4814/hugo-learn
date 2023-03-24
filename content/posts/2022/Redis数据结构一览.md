@@ -24,7 +24,7 @@ toc = false
 
 
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img202208161405062.png" alt="img" style="zoom: 50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img202208161405062.png" alt="img" />
 
 
 
@@ -38,7 +38,7 @@ toc = false
 
 
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img1cc8eaed5d1ca4e3cdbaa5a3d48dfb5f.jpg" alt="img" style="zoom: 50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img1cc8eaed5d1ca4e3cdbaa5a3d48dfb5f.jpg" alt="img" />
 
 
 
@@ -103,7 +103,7 @@ rehash的过程中涉及到大量的数据拷贝，这时候是会导致线程�
 
 压缩列表是由一个**连续内存组成的顺序型数据结构**。一个压缩列表可以包含任意多个节点，每个节点上可以保存一个字节数组或整数值。它是Redis为了节省内存空间而开发的。与数组不同的是，压缩列表在表头有三个字段 zlbytes、zltail 和 zllen，分别表示列表长度、列表尾的偏移量和列表中的 entry 个数；压缩列表在表尾还有一个 zlend，表示列表结束。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img9587e483f6ea82f560ff10484aaca4a0.jpg" alt="img" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img9587e483f6ea82f560ff10484aaca4a0.jpg" alt="img" />
 
 在压缩列表中，如果我们要查找定位第一个元素和最后一个元素，可以通过表头三个字段的长度直接定位，复杂度是 O(1)。而查找其他元素时，就没有这么高效了，只能逐个查找，此时的复杂度就是 O(N) 了。
 
@@ -126,7 +126,7 @@ rehash的过程中涉及到大量的数据拷贝，这时候是会导致线程�
 
 
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//imgf46cbe347f65ded522f1cc3fd8dba549.png" alt="img" style="zoom: 88%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//imgf46cbe347f65ded522f1cc3fd8dba549.png" alt="img" />
 
 在向 quicklist 添加一个元素的时候，不会像普通的链表那样，直接新建一个链表节点。而是会检查插入位置的压缩列表是否能容纳该元素，如果能容纳就直接保存到 quicklistNode 结构里的压缩列表，如果不能容纳，才会新建一个新的 quicklistNode 结构。
 
@@ -142,7 +142,7 @@ rehash的过程中涉及到大量的数据拷贝，这时候是会导致线程�
 
 首先，我们知道对于有序数组，我们可以使用二分查找的方式快速定位一个数字，是因为数组具有随机查找的特性，每次找中位数比较即可。但如果对于一个有序的链表，二分查找就不适用了。所以对于链表，出现了一种跳表的数据结构，其原理就是在有序链表上面增加了多级索引，下图演示了在跳表的结构下查找数据的过程：
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img1eca7135d38de2yy16681c2bbc4f3fb4.jpg" alt="img" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img1eca7135d38de2yy16681c2bbc4f3fb4.jpg" alt="img" />
 
 
 
@@ -158,7 +158,7 @@ Redis对于增加到zset中的每一个元素，其层数都是随机分配的�
 
 Redis 之所以能快速操作键值对，一方面是因为 O(1) 复杂度的哈希表被广泛使用，包括 String、Hash 和 Set，它们的操作复杂度基本由哈希表决定，另一方面，Sorted Set 也采用了 O(logN) 复杂度的跳表。不过，集合类型的范围操作，因为要遍历底层数据结构，复杂度通常是 O(N)。这里，我的建议是：用其他命令来替代，例如可以用 SCAN 来代替，避免在 Redis 内部产生费时的全集合遍历操作。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//imgfb7e3612ddee8a0ea49b7c40673a0cf0.jpg" alt="img" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//imgfb7e3612ddee8a0ea49b7c40673a0cf0.jpg" alt="img" />
 
 
 

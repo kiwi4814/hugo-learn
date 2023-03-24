@@ -52,7 +52,7 @@ series = ["windows软件不完全推荐"]
 - **使用方法**：使用6.29版本记得关闭自动更新。
 - **同类软件**：WinRar、[7-Zip](http://7-zip.org/)等等
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20211127161546420.png" alt="image-20211127161546420" style="zoom: 50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20211127161546420.png" alt="image-20211127161546420" />
 
 ### 02. 浏览器
 
@@ -285,7 +285,7 @@ series = ["windows软件不完全推荐"]
 - **使用方法**：默认快捷键与其他播放器不太一样，比如双击暂停、右键选项菜单、鼠标中键切换全屏等，不习惯的可以自定义。另外，倍速播放、切换音轨、切换字幕都是很方便的快捷键，可以自行搜索下，记住常用的即可。
 - **同类软件**：KMPlayer 、迅雷影音等
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20211127164723187.png" alt="image-20211127164723187" style="zoom:67%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20211127164723187.png" alt="image-20211127164723187" />
 
 #### [YesPlayMusic](https://github.com/qier222/YesPlayMusic)
 
@@ -556,7 +556,7 @@ series = ["windows软件不完全推荐"]
 
 - **使用方法**：安装后任务管理器会出现音量图标，设置原本的音量图标不显示即可，单机图标即可出现下图所示的调节音量界面。
 
-  <img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20211127191256910.png" alt="image-20211127191256910" style="zoom:33%;" />
+  <img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20211127191256910.png" alt="image-20211127191256910" />
 
 #### [f.lux](https://justgetflux.com/)
 
@@ -568,7 +568,7 @@ series = ["windows软件不完全推荐"]
 
 - **使用方法**：安装后设置经纬度就可以自动变化色温了，当然也有更专业的设置可以自己研究，**设计师慎用**。
 
-  <img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20211127192252616.png" alt="image-20211127192252616" style="zoom:50%;" />
+  <img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com/img/image-20211127192252616.png" alt="image-20211127192252616" />
 
 
 

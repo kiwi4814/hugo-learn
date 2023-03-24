@@ -27,7 +27,7 @@ toc = false
 
 首先，我们需要在我们要调试的环境中预先加一些变量。
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img202206201905199.png" alt="image-20220620190454648" style="zoom: 50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img202206201905199.png" alt="image-20220620190454648" />
 
 需要填入的四个变量分别为：
 
@@ -126,7 +126,7 @@ console.log("=====结束执行前置脚本=====");
 
 最后，我们在环境设置页面的全局参数中增加全局变量，就可以默认让每个接口都带上jwt-token参数
 
-<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img202206201914710.png" alt="image-20220620191356450" style="zoom:50%;" />
+<img src="https://kiwi4814-1256211473.cos.ap-nanjing.myqcloud.com//img202206201914710.png" alt="image-20220620191356450" />
 
 
 

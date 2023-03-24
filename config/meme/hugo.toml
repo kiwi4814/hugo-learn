@@ -1,8 +1,8 @@
 ##########################################
 # 站点配置
 
-baseURL = "https://example.com/"
-title = "Hugo 主题 MemE"
+baseURL = "https://kiwi4814.com/"
+title = "kiwi4814"
 languageCode = "zh-CN"
 hasCJKLanguage = true
 # 版权信息（支持 Markdown）
@@ -96,17 +96,17 @@ uglyURLs = false
 # 作者信息
 [author]
     # 名字
-    name = "reuixiy"
+    name = "kiwi4814"
     # 邮箱
-    email = "reuixiy@gmail.com"
+    email = "m4814@qq.com"
     # 座右铭或简介
-    motto = "Viva La Vida"
+    motto = "The time you enjoy wasting is not wasted time."
     # 头像
     avatar = "/icons/apple-touch-icon.png"
     # 网站（默认值：baseURL）
-    website = "https://io-oi.me/"
+    website = "https:/kiwi4814.com/"
     # 推特
-    twitter = "reuixiy"
+    twitter = "kiwi4814"
 
 # 相关文章
 [related]
@@ -1269,13 +1269,13 @@ uglyURLs = false
     iconAnimation = true
 
     # 是否显示 Hugo 和 MemE 的链接
-    displayPoweredBy = true
+    displayPoweredBy = false
 
     # 是否显示站点的版权信息
     displaySiteCopyright = true
 
     # 自定义页脚（支持 Markdown）
-    customFooter = ""
+    customFooter = "客驿风尘面，花坐墨痕枝。"
 
     displayBusuanziSiteUVAndPV = false
     busuanziSiteUVText = "本站访客数"
