@@ -1,16 +1,51 @@
-baseURL = 'http://example.org/'
-# 语言代码
+baseurl = "/"
 languageCode = "en-us"
-# 网站标题
-title = 'Hugo-Learn'
-# 主题
-theme = 'meme'
-# 摘要字数
-summaryLength = 10
+title = "kiwi4814"
+theme = "hugo-ivy"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = [ "\\.Rmd$", "\\.Rmarkdown$", "_cache$" ]
+preserveTaxonomyNames = true
+footnotereturnlinkcontents = "↩"
+enableGitInfo = true
 
+[permalinks]
+note = "/note/:year/:month/:day/:slug/"
+post = "/post/:year/:month/:day/:slug/"
 
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
 
-# SectionPagesMenu = "main"
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 2
 
-# 每一页展示的文章数量
-Paginate = 3
+[[menu.main]]
+name = "Categories"
+url = "/categories/"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags/"
+weight = 4
+
+[[menu.main]]
+name = "Subscribe"
+url = "/index.xml"
+
+[params]
+description = "A Hugo theme ported from the static site generator Ivy."
+footer = "&copy; [kiwi4814](https://kiwi4814.com) 2017-{Year} | [Github](https://github.com/kiwi4814)"
+highlightjsLang = [ "nord" ]
+highlightjsTheme = "github"
+highlightjsVersion = "11.7.0"
+
+[markup.highlight]
+codeFences = false
+
+[markup.goldmark.renderer]
+unsafe = true
